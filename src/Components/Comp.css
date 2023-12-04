@@ -1,0 +1,63 @@
+/* Navbar Css Starts Here */
+.logo-img{
+    height: 40px;
+}
+/* .navbar{
+ box-shadow: 0 0 23px 4px #e0dfdf;
+} */
+
+.dropdown-item:hover{
+background-color: #0D6EFD;
+color: #fff;
+}
+@media(max-width: 776px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+    .dropdown-item::after{
+        transform: rotate(90deg);
+    }
+}
+
+/* Main-Section CSS starts here */
+.main-section-links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    }
+    .main-section-links a:hover{
+        text-decoration: underline;
+    }
+    @media(max-width:400px){
+        .main-section-links a{
+            font-size: .8rem;
+        }
+    }
+
+   
+/* Footer Css Starts here */
+.footer-links ul {
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem;
+}
+.footer-links a:hover{
+    color: #0D6EFD;
+}
+.footer-icons a{
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
+.footer-line{
+    border: 0;
+    border-top: 2px solid #0D6EFD;
+    clear: both;
+    margin: 0 0 20px;
+    width: 45px;
+    opacity: 1;
+}
