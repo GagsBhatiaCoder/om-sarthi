@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo(0,0)
+    }
     return (
         <div className='footer text-light' style={{ background: "#000" }}>
             <div className='d-flex justify-content-around flex-wrap p-5 '>
@@ -53,10 +56,10 @@ export default function Footer() {
             <hr />
             <div className='d-flex justify-content-around'>
                 <div className='footer-links '>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About Us</Link>
-                    <Link to="#">Payment</Link>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/" onClick={scrollToTop}>Home</Link>
+                    <Link to="/about" onClick={scrollToTop}>About Us</Link>
+                    <Link to="#" >Payment</Link>
+                    <Link to="/contact" onClick={scrollToTop}>Contact Us</Link>
                     <Link to="#">Refund Policy</Link>
                     <div className="d-flex justify-content-center align-items-center p-2 footer-icons">
                         <Link to='#'><i className="bi bi-facebook"></i></Link>
