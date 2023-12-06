@@ -1,10 +1,11 @@
-import React from 'react'
-// import WatsappBtn from '../Components/WatsappBtn'
+import React from 'react';
+import PropTypes from 'prop-types'
 
-export default function QueryForm() {
+
+export default function QueryForm({title, submit}) {
     return (
         <div className='bg-light p-3 rounded'>
-             <h4 className='text-center p-3 mb-3'>Get Quote Instantly in a Minute</h4>
+             <h4 className='text-center p-3 mb-3'>{title}</h4>
             <form >
                 <div className="mb-3">
                     <input type="text" className="form-control" placeholder='Name' />
@@ -21,9 +22,17 @@ export default function QueryForm() {
                     <input type="text" className="form-control" placeholder='City' />
                 </div>
                 <div className='d-flex justify-content-center'>
-                <button type="submit" className="btn btn-primary me-2">Submit</button> 
+                <button type="submit" className="btn btn-primary me-2">{submit}</button> 
                 </div>
             </form>
         </div>
     )
+}
+QueryForm.propTypes ={
+    title: PropTypes.string,
+    submit: PropTypes.string
+} 
+QueryForm.defaultProps ={
+    title:"Get Started",
+    submit: "Submit"
 }

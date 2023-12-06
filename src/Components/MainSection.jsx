@@ -1,4 +1,5 @@
 import React from 'react'
+import './Comp.css'
 import QueryForm from '../Forms/QueryForm';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ export default function MainSection() {
         <>
             <main className=' d-flex justify-content-around flex-column flex-md-row  bg-primary p-5 '>
                 <div>
-                    <h1 className='py-2'>Welcome To <span>Samay</span></h1>
+                    <h1 className='py-2'>Welcome To <span >Samay</span></h1>
                     <p className='fs-5'>Easily start and operate your business with Industry Experts at one place.</p>
                     <div className='main-section-links d-flex justify-content-around flex-wrap p-3'>
                         <div >
@@ -25,7 +26,7 @@ export default function MainSection() {
                     </div>
                 </div>
                 <div>
-                    <QueryForm />
+                    <QueryForm title="Register Yourself Today" submit="Submit" />
                 </div>
             </main>
         </>
