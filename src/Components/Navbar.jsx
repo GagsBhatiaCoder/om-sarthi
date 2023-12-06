@@ -8,13 +8,15 @@ import { Link } from 'react-router-dom'
 
 
 export default function Navbar() {
-
+const scrollTop = () => {
+  window.scrollTo(0, 0)
+}
 
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/"><img className='logo-img' src={Logo} alt="Om_Sarthi_Logo" /></Link>
+          <Link className="navbar-brand" to="/" onClick={scrollTop}><img className='logo-img' src={Logo} alt="Om_Sarthi_Logo" /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
