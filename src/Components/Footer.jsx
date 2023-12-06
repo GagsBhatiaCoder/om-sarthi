@@ -54,7 +54,7 @@ export default function Footer() {
             <div className='d-flex justify-content-around'>
                 <div className='footer-links '>
                     <Link to="/">Home</Link>
-                    <Link to="/about">About Us</Link>
+                    <a href="/about">About Us</a>
                     <Link to="#">Payment</Link>
                     <Link to="/contact">Contact Us</Link>
                     <Link to="#">Refund Policy</Link>
