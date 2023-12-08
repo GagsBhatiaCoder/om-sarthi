@@ -8,7 +8,8 @@ import Reward from '../assets/Icons/rewards.png';
 
 export default function Achievements() {
   return (
-    <div>
+    <div className='p-5' style={{background:"#EEF5FF"}}>
+      <h4 className='text-center my-5'>Achievements</h4>
        <div className='d-flex flex-wrap justify-content-around p-4'>
         <AboutCard Img={Space} title="7+" content="Years of Startup
        Centric Legal Expertise" />

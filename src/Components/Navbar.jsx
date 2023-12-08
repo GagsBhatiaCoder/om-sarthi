@@ -41,7 +41,7 @@ const scrollTop = () => {
                   <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     Business Registration</Link>
                     <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item ">Private Limited Company</Link></li>
+                      <li><Link to='/fullservice' className="dropdown-item ">Private Limited Company</Link></li>
                       <li><Link href="" className="dropdown-item">Limited Liability Partnership</Link></li>
                       <li><Link href="" className="dropdown-item">One Person Company</Link></li>
                       <li><Link href="" className="dropdown-item">Sole Proprietorship</Link></li>

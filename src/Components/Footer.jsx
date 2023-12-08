@@ -45,7 +45,7 @@ export default function Footer() {
                     <h5 className='pb-3 footer-subtitle'>Accounting & Tax</h5>
                     <hr className='footer-line' />
                     <ul>
-                        <li><Link to="#">Private Limited Company</Link></li>
+                        <li><Link to="/fullservice" onClick={scrollToTop}>Private Limited Company</Link></li>
                         <li><Link to="#">Limited Liability Partnership</Link></li>
                         <li><Link to="#">One Person Company</Link></li>
                         <li><Link to="#">Partnership Firm</Link></li>

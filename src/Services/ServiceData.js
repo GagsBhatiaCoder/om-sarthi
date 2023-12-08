@@ -46,6 +46,34 @@ const serviceData = [
         title: "Web Developent",
         content:"Creating and Maintaining your Website with SEO Services",
         src: "#",
+    },
+    {
+        id:7,
+        Img: Img6,
+        title: "Web Developent",
+        content:"Creating and Maintaining your Website with SEO Services",
+        src: "#",
+    },
+    {
+        id:8,
+        Img: Img6,
+        title: "Web Developent",
+        content:"Creating and Maintaining your Website with SEO Services",
+        src: "#",
+    },
+    {
+        id:9,
+        Img: Img6,
+        title: "Web Developent",
+        content:"Creating and Maintaining your Website with SEO Services",
+        src: "#",
+    },
+    {
+        id:10,
+        Img: Img6,
+        title: "Web Developent",
+        content:"Creating and Maintaining your Website with SEO Services",
+        src: "#",
     }
 ]
 

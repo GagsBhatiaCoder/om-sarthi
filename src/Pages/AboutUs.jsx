@@ -28,8 +28,8 @@ export default function AboutUs() {
           <img className='founder-img' src={Img1} alt="Author Img" />
         </div>
       </div>
-      <div className='p-4'>
-        <h4 className='text-center p-2 '>Our Story</h4>
+      <div className='p-4 container'>
+        <h4 className='text-center p-2 my-5'>Our Story</h4>
 
         <p className='fs-6'>Anirudhh Mittal, with his profound legal expertise, embarked on the journey of <b>Om Sarthi Solutions in 2017,</b> establishing a foundation rooted in legal excellence. Over the years, Om Sarthi Solutions has flourished under Anirudhh's leadership, earning recognition and accolades for its outstanding contributions to the legal landscape.</p>
         <p> <b>Samay</b>, as an integral component of the Om Sarthi Group, inherits the legacy of Om Sarthi Solutions' success. With a clear focus on delivering top-notch legal services, Samay is dedicated to navigating the intricacies of the legal landscape for its clients.</p>
