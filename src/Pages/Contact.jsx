@@ -12,7 +12,7 @@ export default function Contact() {
       <Navbar />
       <FloatWatsappBtn />
       <div className=' '>
-        <div className='d-flex justify-content-around bg-primary p-4'>
+        <div className='d-flex flex-column flex-md-row justify-content-around bg-primary p-4'>
           <div className='d-flex justify-content-center flex-column align-items-between p-4 text-light fs-5'>
             <span className='text-decoration-none text-light fs-5 text-center' > <i className="bi bi-geo-alt fs-4 me-3"></i> 05, Brij Dham Colony, Mini Byp,<br />
               behind Sai Dharam Kanta,<br /> Karamchari Nagar, Izatnagar,<br />

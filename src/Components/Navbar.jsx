@@ -41,14 +41,14 @@ const scrollTop = () => {
                   <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     Business Registration</Link>
                     <ul className="dropdown-menu">
-                      <li><Link to='/fullservice' className="dropdown-item ">Private Limited Company</Link></li>
-                      <li><Link href="" className="dropdown-item">Limited Liability Partnership</Link></li>
-                      <li><Link href="" className="dropdown-item">One Person Company</Link></li>
-                      <li><Link href="" className="dropdown-item">Sole Proprietorship</Link></li>
-                      <li><Link href="" className="dropdown-item">Nidhi Company</Link></li>
-                      <li><Link href="" className="dropdown-item">Producer Company</Link></li>
-                      <li><Link href="" className="dropdown-item">Partnership Firm</Link></li>
-                      <li><Link href="" className="dropdown-item">Startup India Registration</Link></li>
+                      <li><Link to="/allservice/5" className="dropdown-item ">Private Limited Company</Link></li>
+                      <li><Link to="/allservice/16" className="dropdown-item">Limited Liability Partnership</Link></li>
+                      <li><Link to="/allservice/17" className="dropdown-item">One Person Company</Link></li>
+                      <li><Link to="/allservice/18" className="dropdown-item">Sole Proprietorship</Link></li>
+                      <li><Link to="/allservice/11" className="dropdown-item">Nidhi Company</Link></li>
+                      <li><Link to="/allservice/6" className="dropdown-item">Farmer Producer Company</Link></li>
+                      <li><Link to="/allservice/12" className="dropdown-item">Partnership Firm</Link></li>
+                      <li><Link to="/allservice/13" className="dropdown-item">Startup India Registration</Link></li>
                     </ul>
                   </li>
                   <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,15 +61,15 @@ const scrollTop = () => {
                   <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     License & Registration</Link>
                     <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Digital Signature Certificate</Link></li>
+                      <li><Link to="/allservice/19" className="dropdown-item">Digital Signature Certificate</Link></li>
                       <li><Link href="" className="dropdown-item">Udyam Registration</Link></li>
-                      <li><Link href="" className="dropdown-item">MSME Registration</Link></li>
-                      <li><Link href="" className="dropdown-item">ISO Certification</Link></li>
-                      <li><Link href="" className="dropdown-item">FSSAI [Food License]</Link></li>
-                      <li><Link href="" className="dropdown-item">IEC [Import/Export Code]</Link></li>
-                      <li><Link href="" className="dropdown-item">Spice Board Registration</Link></li>
-                      <li><Link href="" className="dropdown-item">FIEO Registration</Link></li>
-                      <li><Link href="" className="dropdown-item">Legal Metrology</Link></li>
+                      <li><Link to="/allservice/3" className="dropdown-item">MSME Registration</Link></li>
+                      <li><Link to="/allservice/8" className="dropdown-item">ISO Certification</Link></li>
+                      <li><Link to="/allservice/4" className="dropdown-item">FSSAI [Food License]</Link></li>
+                      <li><Link to="/allservice/7" className="dropdown-item">IEC [Import/Export Code]</Link></li>
+                      <li><Link to="/allservice/20" className="dropdown-item">Shop & Establishment Registration</Link></li>
+                      <li><Link to="/allservice/21" className="dropdown-item">Labour Registration</Link></li>
+                      {/* <li><Link href="" className="dropdown-item">Legal Metrology</Link></li>
                       <li><Link href="" className="dropdown-item">Hallmark Registration</Link></li>
                       <li><Link href="" className="dropdown-item">BIS Registration</Link></li>
                       <li><Link href="" className="dropdown-item">Liquor License</Link></li>
@@ -77,11 +77,11 @@ const scrollTop = () => {
                       <li><Link href="" className="dropdown-item">AD Code Registration</Link></li>
                       <li><Link href="" className="dropdown-item">IRDAI Registration</Link></li>
                       <li><Link href="" className="dropdown-item">Drug & Cosmetic License</Link></li>
-                      <li><Link href="" className="dropdown-item">Customs Clearance</Link></li>
+                      <li><Link href="" className="dropdown-item">Customs Clearance</Link></li> */}
 
                     </ul>
                   </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Web Developement</Link>
+                  {/* <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Web Developement</Link>
                     <ul className="dropdown-menu">
                       <li><Link href="" className="dropdown-item">E-commerce Websites</Link></li>
                       <li><Link href="" className="dropdown-item">Business or Corporate Websites</Link></li>
@@ -90,7 +90,7 @@ const scrollTop = () => {
                       <li><Link href="" className="dropdown-item">NGO Website</Link></li>
 
                     </ul>
-                  </li>
+                  </li> */}
 
                 </ul>
               </li>
@@ -99,6 +99,13 @@ const scrollTop = () => {
                   Tax & Compilence
                 </Link>
                 <ul className="dropdown-menu">
+                  <li ><Link className='dropdown-item' to="/allservice/14" >Accounting & Book Keeping</Link></li>
+                  <li ><Link className='dropdown-item' to="/allservice/1" >GST Registration</Link></li>
+                  <li ><Link className='dropdown-item' to="/allservice/15" >GST Return Filling</Link></li>
+                  <li ><Link className='dropdown-item' to="/allservice/2">Income Tax</Link></li>
+                </ul>
+                </li>
+                {/* <ul className="dropdown-menu">
                   <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     GST and Other Indirect Tax</Link>
                     <ul className="dropdown-menu">
@@ -145,102 +152,38 @@ const scrollTop = () => {
                     </ul>
                   </li>
 
-                </ul>
-              </li>
+                </ul> */}
+              
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
                   Trademark & IP
                 </Link>
                 <ul className="dropdown-menu">
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    GST and Other Indirect Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">GST Registration</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Changes in Pvt Ltd Company</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Add a Director</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accounting & Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Accounting and Book-keeping</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Web Developement</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">E-commerce Websites</Link></li>
-                    </ul>
-                  </li>
-
+                  <li ><Link className='dropdown-item' to="/allservice/22">Trademark Registration</Link></li>
+                  <li ><Link className='dropdown-item' to="/allservice/23">Copywright Registration</Link></li>
+                  <li ><Link className='dropdown-item' to="/allservice/24">Patent</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
-                  Documentation
+                  Web Developement
                 </Link>
                 <ul className="dropdown-menu">
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    GST and Other Indirect Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">GST Registration</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Changes in Pvt Ltd Company</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Add a Director</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accounting & Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Accounting and Book-keeping</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropend'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Web Developement</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">E-commerce Websites</Link></li>
-                    </ul>
-                  </li>
-
+                  <li className="dropdown-item"><Link to="/allservice/25" className="dropdown-item">Static Website/Dynamic Website </Link> </li>
+                  <li className="dropdown-item"><Link to="/allservice/27" className="dropdown-item">E-Commerce Website</Link></li>
                 </ul>
-              </li>
+                </li>
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
-                  Others
+                  NGO
                 </Link>
                 <ul className="dropdown-menu">
-                  <li className='dropstart'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    GST and Other Indirect Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">GST Registration</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropstart'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Changes in Pvt Ltd Company</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Add a Director</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropstart'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accounting & Tax</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="" className="dropdown-item">Accounting and Book-keeping</Link></li>
-                    </ul>
-                  </li>
-                  <li className='dropstart'><Link className="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    Web Developement</Link>
-                    <ul className="dropdown-menu">
-                      <li><Link href="#" className="dropdown-item">E-commerce Websites</Link></li>
-                    </ul>
-                  </li>
-
+                  <li ><Link to="/allservice/28" className="dropdown-item">Section-8</Link></li>
+                  <li ><Link to="/allservice/29" className="dropdown-item">Society Registration</Link></li>
+                  <li ><Link to="/allservice/30" className="dropdown-item">Trust registration</Link></li>
+                  <li ><Link to="/allservice/31" className="dropdown-item">CSR-1 Filling</Link></li>
+                  <li ><Link to="/allservice/32" className="dropdown-item">Sec. 80G & 12A Registration</Link></li>
+                  <li ><Link to="/allservice/33" className="dropdown-item">Niti Aayog Resgistration</Link></li>              
                 </ul>
               </li>
             </ul>

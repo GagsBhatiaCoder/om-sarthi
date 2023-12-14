@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import Navbar from '../Components/Navbar'
-import Img1 from '../assets/img1.jpg'
+import Author from '../assets/author.jpeg'
 import FloatWatsappBtn from '../Components/FloatWatsappBtn';
 import Achievements from '../Components/Achievements';
 import Footer from '../Components/Footer';
@@ -25,7 +25,7 @@ export default function AboutUs() {
         </div>
 
         <div>
-          <img className='founder-img' src={Img1} alt="Author Img" />
+          <img className='founder-img' src={Author} alt="Author Img" />
         </div>
       </div>
       <div className='p-4 container'>
@@ -33,7 +33,7 @@ export default function AboutUs() {
 
         <p className='fs-6'>Anirudhh Mittal, with his profound legal expertise, embarked on the journey of <b>Om Sarthi Solutions in 2017,</b> establishing a foundation rooted in legal excellence. Over the years, Om Sarthi Solutions has flourished under Anirudhh's leadership, earning recognition and accolades for its outstanding contributions to the legal landscape.</p>
         <p> <b>Samay</b>, as an integral component of the Om Sarthi Group, inherits the legacy of Om Sarthi Solutions' success. With a clear focus on delivering top-notch legal services, Samay is dedicated to navigating the intricacies of the legal landscape for its clients.</p>
-        <p>Our commitment to excellence has not gone unnoticed, as the firm has been duly recognized and rewarded by none other than the <b>Finance Minister of India</b>. This acknowledgment serves as a testament to our unwavering dedication, ethical practices, and impactful contributions to the legal field.</p>
+        <p>Our commitment to excellence has not gone unnoticed, as the firm has been duly recognized and rewarded by none other than the <b>Finance Minister of U.P</b>. This acknowledgment serves as a testament to our unwavering dedication, ethical practices, and impactful contributions to the legal field.</p>
         <p>At Samay, we believe in the intersection of time and legal precision. Our team, under the adept guidance of Anirudhh Mittal, works tirelessly to uphold the principles of justice, ensuring that each client receives personalized, effective, and timely legal solutions.</p>
         <p>As we continue to evolve and expand our horizons, Samay remains committed to being a beacon of legal expertise, offering clients a trusted partner in their legal journey. Join us as we redefine legal services, one moment at a time.</p>
 

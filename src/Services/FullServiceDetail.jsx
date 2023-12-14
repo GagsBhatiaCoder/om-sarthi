@@ -1,50 +1,66 @@
 import React from 'react';
-import QueryForm from '../Forms/QueryForm'
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import { useParams } from 'react-router-dom';
+import serviceData from './ServiceData';
+import Achievements from '../Components/Achievements';
+import FloatWatsappBtn from '../Components/FloatWatsappBtn';
+
 
 export default function FullServiceDetail() {
+    const { id } = useParams();
+    const post = serviceData.find((post) => post.id === parseInt(id));
+    if (!post) {
+        return <div>Artical Not Found</div>
+    }
     return (
         <div>
             <Navbar />
-            <div className='d-flex justify-content-around align-items-center bg-warning bg-gradient p-5 '>
-                <div>
-                    <h2>Private Limited (Pvt Ltd) Company <br />
-                        Registration Online In India</h2>
-                    <p>No more delays or difficulties! Register your business <br />
-                        with India’s #1 provider of company incorporation <br />
-                        services. Get a 7 day Guaranteed document upload to <br />
-                        the MCA or receive a full refund T&C* </p>
+            <FloatWatsappBtn />
+            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-5 '>
+                <div className='fullservice-titles'>
+                    <h2 className='mb-2'>{post.title}</h2>
+                    <p className='fs-5'>{post.content} </p>
                 </div>
-                <div>
-                    <QueryForm title="Register Your Company" />
+                <div className='fullservice-form'>
+                    {post.queryForm}
                 </div>
             </div>
             <div className='p-5'>
-                <h4>Benefits of Pvt Ltd Company Registration</h4>
-                <p>There are numerous advantages to registering a company. By doing so, you enhance the credibility of your business, which can lead to increased consumer trust. Additionally, company registration online can provide various benefits that can help your business to grow and succeed.</p>
-                <ul>
-                    <li>Shield from personal liability and protects from other risks and losses</li>
-                    <li>Attract more customers</li>
-                    <li>Procure bank credits and good investment from reliable investors with ease</li>
-                    <li>Offers liability protection to protect your company’s assets</li>
-                    <li>Greater capital contribution and greater stability</li>
-                    <li>Increases the potential to grow big and expand</li>
-                </ul>
-                <h4>How to Register a Company?</h4>
-                <p>Registering a company in India has become incredibly convenient and accessible. At Vakilsearch, we have simplified the process to ensure a seamless experience, whether you want to register a private limited company or any other business structure. You can gain comprehensive insights into the registration procedure with few essential steps. The online registration system has made the entire process user-friendly and streamlined, eliminating any hassles.</p>
-            <h4>Steps For Company Registration Process in India</h4>
-            <h6>Step 1: Collecting Initial Documents</h6>
-            <p>Gather the necessary documents and get them verified for the incorporation process.</p>
-            <h6>Step 2: DSC and Name Approval</h6>
-            <p>Apply for Digital Signature Certificate (DSC) and seek approval for your company name from MCA.</p>
-            <h6>Step 3: Collecting Additional Documents</h6>
-            <p>Acquire the second set of required documents and ensure their verification.</p>
-            <h6>Step 4: Drafting MOA and AOA</h6>
-            <p>Prepare the Memorandum of Association (MOA) and Articles of Association (AOA) for your company.</p>
-            <h6>Step 5: Final Form Upload</h6>
-            <p>Upload the completed documents and forms for the final stage of company incorporation.</p>
-            </div>   
+                {post.benefits && (
+                    <>
+                        <h4>{post.benefits.title}</h4>
+                        <p className='fs-5'>{post.benefits.content}</p>
+                        <h4>{post.benefits.subtitle}</h4>
+                        {post.benefits.list && post.benefits.list.length > 0 && (
+                           
+                            <ul>
+                                
+                                {post.benefits.list.map((item, index) => (
+                                    <li className='fs-5 mb-2' key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        )}
+                    </>
+                )}
+                {post.howToRegister && (
+                    <>
+                        <h4>{post.howToRegister.title}</h4>
+                        <p className='fs-5'>{post.howToRegister.content}</p>
+                        <h4>{post.howToRegister.heading}</h4>
+                        {post.howToRegister.steps && post.howToRegister.steps.length > 0 && (
+                            <ul>
+                                {post.howToRegister.steps.map((item, index) => (
+                                    <li className='fs-5 mb-2' key={index}>
+                                    {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </>
+                )}
+            </div>
+            <Achievements />
             <Footer />
         </div>
     )
