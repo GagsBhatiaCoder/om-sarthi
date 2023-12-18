@@ -1,35 +1,40 @@
-import Img1 from "../assets/img1.jpg";
-import Img2 from "../assets/img2.jpg";
-import Img3 from "../assets/img3.jpg";
-import Img4 from "../assets/img4.jpg";
-import Img5 from "../assets/img5.jpg";
+import TAX from "../assets/tax.png";
+import PVT from '../assets/pvt.png';
+import IEC from '../assets/imp&exp.png';
+import ISO from '../assets/iso.png';
 import Img6 from "../assets/img6.jpg";
+import FARMER from "../assets/farmer.png";
+import GST from '../assets/gst.png';
+import MSME from '../assets/msme.png';
+import FOOD from '../assets/food.png';
+import NIDHI from '../assets/nidhi.png';
+import PARTNER from '../assets/Partnership.png';
 import QueryForm from "../Forms/QueryForm";
 const serviceData = [
   {
     id: 1,
-    Img: Img1,
+    Img: GST,
     title: "GST Registration",
     content:
       "Streamline taxation with our expert assistance. Ensure legal compliance, enhance credibility, and simplify the process for a seamless registration experience. Boost your business efficiency with our comprehensive GST Registration services.",
     queryForm: <QueryForm title="GST Registration" />,
-    benefits: {
+    section1: {
       title: "GST (Goods and Service Tax) - Overview",
       content: `
             The Goods and Services Tax (GST) is a type of tax on the consumption of goods and services in countries, collected by businesses from consumers and paid to the government.It was introduced officially in India on 1 July 2017, replacing the earlier system of multiple taxes, such as excise duty, service tax, and value-added tax (VAT).
             The 101st Constitutional Amendment / One Hundred and First Amendment Act, 2016 of the Constitution of India is a significant piece of legislation that has had a prominent impact on the Indian economy. It was passed in 2016 to introduce the Goods and Services Tax (GST), a value-added tax (VAT) that has simplified the tax system and boosted economic growth. This constitutional amendment was introduced as a nationwide Goods and Services Tax (GST) concept in India.
             GST registration is mandatory for all businesses with an annual turnover of more than ₹40 lakhs (₹ 20 lakhs for businesses in special category states).
             The Goods and Services Tax Network (GSTN) is a non-profit, non-government organisation that provides the shared IT infrastructure and services to the Central and State Governments, taxpayers and other stakeholders to implement the Goods and Services Tax (GST) in India.
-The GSTN is responsible for developing and maintaining the GST portal, which is the online platform that taxpayers use to register for GST, file returns, and make payments.
+            The GSTN is responsible for developing and maintaining the GST portal, which is the online platform that taxpayers use to register for GST, file returns, and make payments.
             `,
       list: [],
     },
-    howToRegister: {
+    section2: {
       title: "What is GSTIN?",
       content: `
             GSTIN stands for Goods and Services Tax Identification Number. It is a unique 15-digit number assigned to every taxpayer registered under the GST regime in India. The GSTIN is used to identify taxpayers and to track their transactions.
             `,
-      heading: "Steps For Company Registration Process in India",
+      subtitle: "Steps For Company Registration Process in India",
       steps: [
         "The first two digits represent the state code.",
         "The next ten digits are the PAN card number of the taxpayer.",
@@ -38,14 +43,25 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
         "The fifteenth digit is a check digit, which is used to verify the accuracy of the GSTIN.",
       ],
     },
+    section3: {
+      title: "GST (Goods and Service Tax) - Overview",
+      content: `
+            The Goods and Services Tax (GST) is a type of tax on the consumption of goods and services in countries, collected by businesses from consumers and paid to the government.It was introduced officially in India on 1 July 2017, replacing the earlier system of multiple taxes, such as excise duty, service tax, and value-added tax (VAT).
+            The 101st Constitutional Amendment / One Hundred and First Amendment Act, 2016 of the Constitution of India is a significant piece of legislation that has had a prominent impact on the Indian economy. It was passed in 2016 to introduce the Goods and Services Tax (GST), a value-added tax (VAT) that has simplified the tax system and boosted economic growth. This constitutional amendment was introduced as a nationwide Goods and Services Tax (GST) concept in India.
+            GST registration is mandatory for all businesses with an annual turnover of more than ₹40 lakhs (₹ 20 lakhs for businesses in special category states).
+            The Goods and Services Tax Network (GSTN) is a non-profit, non-government organisation that provides the shared IT infrastructure and services to the Central and State Governments, taxpayers and other stakeholders to implement the Goods and Services Tax (GST) in India.
+            The GSTN is responsible for developing and maintaining the GST portal, which is the online platform that taxpayers use to register for GST, file returns, and make payments.
+            `,
+      list: [],
+    },
   },
   {
     id: 2,
-    Img: Img2,
+    Img: TAX,
     title: "Income Tax",
     content: " Navigate the complexities of income tax with our expert services. From filing returns to strategic tax planning, we ensure compliance and maximize your financial efficiency. Trust us for accurate, timely, and comprehensive income tax solutions tailored to your needs.",
     queryForm: <QueryForm title="GST Registration" />,
-    benefits: {
+    section1: {
         title: "Benefits of e-Filing of Income Tax Return",
         content: `
         E-filing your income tax return has several advantages that can simplify your financial life. Here's how it can help you:
@@ -60,7 +76,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
           "Plan Your Finances Better: E-filing makes you assess your financial situation every year, helping you make better financial plans for the future."
         ],
       },
-      howToRegister: {
+      section2: {
         title: "How to Register a Company?",
         content: `
           
@@ -78,11 +94,11 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
   },
   {
     id: 3,
-    Img: Img3,
+    Img: MSME,
     title: "MSME Registration",
     content: "MSME Registration. Our streamlined process ensures swift registration for Micro, Small, and Medium Enterprises. Gain access to government schemes, financial support, and a competitive edge. Let our expert services empower your business growth through hassle-free MSME registration, paving the way for enhanced recognition and opportunities in the market.",
     queryForm: <QueryForm title="MSME Registration" />,
-    benefits: {
+    section1: {
         title: "MSME Registration Form",
         content: `The 'MSME Registration Form' refers to the official document or online application used by Micro, Small, and Medium Enterprises (MSMEs) in India to apply for registration under the MSME category. This registration offers businesses recognition and access to various benefits and support provided by the government to promote their growth and development.
         When filling out the MSME Registration Form, key details and information must be provided. These typically include:
@@ -103,7 +119,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
           "Date of Commencement: Mention the date the business started its operations."
         ],
       },
-      howToRegister: {
+      section2: {
         title: "",
         content: `
           
@@ -127,19 +143,19 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
   },
   {
     id: 4,
-    Img: Img4,
+    Img: FOOD,
     title: "Fssai (Food Licences)",
     content: "Ensure food safety compliance with FSSAI registration. Our expert services simplify the process, offering swift registration for Food Business Operators. From small-scale to large enterprises, gain credibility, legal compliance, and access to broader markets. Let us navigate the intricacies of FSSAI, ensuring your food business meets regulatory standards seamlessly.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 5,
-    Img: Img5,
+    Img: PVT,
     title: "Private Limited Company",
     content: `Elevate your business with a Private Limited Company. Enjoy limited liability,
      credibility, and growth potential. Our expert assistance ensures a smooth incorporation process, compliance with regulations, and strategic business structuring. Unlock the advantages of a Private Limited Company for enduring success and enhanced market presence.`,
     queryForm: <QueryForm title="Register Your Company" />,
-    benefits: {
+    section1: {
       title: "Benefits of Registering a Company",
       content: `
               There are numerous advantages to registering a company. 
@@ -157,7 +173,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
         "Increases the potential to grow big and expand",
       ],
     },
-    howToRegister: {
+    section2: {
       title: "How to Register a Company?",
       content: `
               Registering a company in India has become incredibly convenient and accessible. 
@@ -179,11 +195,11 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
   },
   {
     id: 6,
-    Img: Img6,
+    Img: FARMER,
     title: "Farmer Producer Company (FPO Registration)",
     content: "Cultivate success with a Farmer Producer Company (FPC). Empower agricultural communities through collaborative farming ventures. Our expert services guide you in establishing an FPC, fostering collective strength, access to resources, and market opportunities. Join the agricultural revolution, promoting sustainable farming practices and ensuring prosperity for farming communities.",
     queryForm: <QueryForm title="Producer Company Registration" />,
-    benefits: {
+    section1: {
       title: "Benefits of FPO Registration",
       content: "There are many benefits to registering a Farmer Producer Organization (FPO), including:",
       list: [
@@ -195,7 +211,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
         "FPOs can help farmers to reach new markets and sell their produce at a higher price"
       ],
     },
-    howToRegister: {
+    section2: {
       title: "Producer Company Incorporation (FPO Registration) - An Overview",
       content: `
       Producer company registration is forming a producer company under the Companies Act of 2013. Producer companies are special types of businesses formed by farmers and other agricultural producers to help them market and sell their products more effectively. They have limited liability for their members, which means that the members are not personally responsible for the debts and liabilities of the company.
@@ -218,11 +234,11 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
   },
   {
     id: 7,
-    Img: Img6,
+    Img: IEC,
     title: "IEC (Import & Export)",
     content: "Facilitate international trade with IEC registration. Our expert services streamline the Import and Export Code process, ensuring swift approval. Unlock global markets, enhance credibility, and comply with regulatory standards. Let us empower your business to navigate the complexities of cross-border trade seamlessly. Gain a competitive edge with our efficient IEC registration assistance.",
     queryForm: <QueryForm title="Ask the Experts" />,
-    benefits: {
+    section1: {
       title: "Benefits of IEC Code",
       content: `
       An Import Export Code (IEC) is a 10-digit code necessary for Indian import/export businesses. It's issued by the DGFT, Ministry of Commerce, and doesn't require filing or renewal. Importers need IEC to clear customs and make payments to foreign banks, while exporters need it to send shipments and receive payments.The IEC Number is essential for any importer/exporter operating in India.
@@ -235,7 +251,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
         "An IEC code remains effective for the entirety of an entity's existence and doesn't require renewal. Once obtained, it serves as an entity across all import and export transactions."
       ],
     },
-    howToRegister: {
+    section2: {
       title: "How to Register for Import Export Code?",
       content: `
       The process for importer exporter code registration online in India is relatively simple and can be completed in a few steps. Here's how to register for an import export license online in India:
@@ -256,35 +272,35 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
   },
   {
     id: 8,
-    Img: Img6,
+    Img: ISO,
     title: "ISO Certifications",
     content: "Attain global standards and credibility with ISO Certifications. Our expert services streamline the certification process, ensuring compliance with international quality benchmarks. From ISO 9001 for quality management to ISO 14001 for environmental practices, let us guide your business towards excellence. Elevate your reputation, enhance customer trust, and open doors to new opportunities with our comprehensive ISO Certification assistance.",
     queryForm: <QueryForm title="ISO Certifications Registration" />,
   },
   {
     id: 9,
-    Img: Img6,
+    Img: NIDHI,
     title: "PF Registration",
     content: "Ensure employee financial security with PF Registration. Our expert services simplify the Provident Fund registration process, guaranteeing compliance and fostering employee well-being. From seamless documentation to regulatory adherence, trust us to navigate the complexities, providing a solid foundation for your business and demonstrating your commitment to employee welfare.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 10,
-    Img: Img6,
+    Img: NIDHI,
     title: "ESI Registration",
     content: " Prioritize employee well-being with ESI Registration. Our expert services streamline the Employees' State Insurance registration process, ensuring compliance and comprehensive health coverage for employees. From documentation to regulatory adherence, entrust us to navigate complexities, fostering a healthy work environment and demonstrating your commitment to employee welfare.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 11,
-    Img: Img6,
-    title: "Nidhi Company",
+    Img: NIDHI,
+    title: "Nidhi Company Registration",
     content: "Foster community savings and financial stability with a Nidhi Company. Our expert services guide you through the seamless establishment of a Nidhi Company, promoting mutual benefit among members through regulated savings and lending practices. Enhance financial inclusivity, community trust, and sustainable growth with our comprehensive Nidhi Company registration assistance.",
-    queryForm: <QueryForm title="GST Registration" />,
+    queryForm: <QueryForm title="Nidhi Company Registration" />,
   },
   {
     id: 12,
-    Img: Img6,
+    Img: PARTNER,
     title: "Partnership Firm",
     content: "Embrace collaboration and shared success with a Partnership Firm. Our expert services facilitate the smooth creation of a partnership, ensuring clarity in roles, responsibilities, and profit-sharing. From documentation to registration, trust us to establish a robust partnership structure that aligns with your business goals. Elevate your ventures through the strength of partnership with our comprehensive assistance.",
     queryForm: <QueryForm title="GST Registration" />,
@@ -317,7 +333,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
     content:
       "Limited Liability Partnership (LLP): A modern business structure blending partnership flexibility with limited liability. Partners enjoy protection from personal liability, shielding assets from business debts. Ideal for professional services, LLPs offer collaborative advantages with simplified operations, making it a strategic choice for businesses seeking flexibility and liability protection.",
     queryForm: <QueryForm title="Register Your Company" />,
-    benefits: {
+    section1: {
       title: "What Is Limited Liability Partnership?",
       content: `
             LLP is a popular type of partnership where limited liability Partners enjoy protection of personal assets from debts, liabilities & damages. An LLP is a corporate body and legal entity separate from its partners. It has perpetual succession in every state and is registered under the LLP Act, 2008
@@ -341,7 +357,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
         " A registered office must be established.",
       ],
     },
-    howToRegister: {
+    section2: {
       heading: "Advantages of Limited Liability Partnership",
       steps: [
         "Limited liability: The partners of an LLP are not personally liable for the debts and liabilities of the LLP. This means that their assets are protected if the LLP becomes insolvent.",
@@ -428,7 +444,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
     title: "Section-8",
     content: "Empower social change with our NGO Section 8 Registration services. We guide you through the seamless process of establishing a non-profit organization, registered under Section 8 of the Companies Act. Ensure legal compliance, unlock funding opportunities, and make a lasting impact on society. Trust us to navigate the complexities, providing comprehensive assistance for your NGO Section 8 Registration. Propel your philanthropic endeavors with our expert guidance.",
     queryForm: <QueryForm title="GST Registration" />,
-    benefits: {
+    section1: {
       title: "Benefits of Section 8 Company Compliance",
       content: `
       Compliance as a Section 8 company in India comes with several benefits. Being a non-profit entity,
@@ -452,7 +468,7 @@ The GSTN is responsible for developing and maintaining the GST portal, which is 
        
       ],
     },
-    howToRegister: {
+    section2: {
       title: "",
       content: `
             `,

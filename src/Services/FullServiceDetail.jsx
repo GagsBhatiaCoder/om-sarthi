@@ -18,42 +18,61 @@ export default function FullServiceDetail() {
             <Navbar />
             <FloatWatsappBtn />
             <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-5 '>
+                
                 <div className='fullservice-titles'>
                     <h2 className='mb-2'>{post.title}</h2>
                     <p className='fs-5'>{post.content} </p>
+                     {/* <img style={{width:"100%"}} src={post.Img} alt={post.title} /> */}
                 </div>
                 <div className='fullservice-form'>
                     {post.queryForm}
                 </div>
+               
             </div>
             <div className='p-5'>
-                {post.benefits && (
+                {post.section1 && (
                     <>
-                        <h4>{post.benefits.title}</h4>
-                        <p className='fs-5'>{post.benefits.content}</p>
-                        <h4>{post.benefits.subtitle}</h4>
-                        {post.benefits.list && post.benefits.list.length > 0 && (
+                        <h4>{post.section1.title}</h4>
+                        <p className='fs-5'>{post.section1.content}</p>
+                        <h4>{post.section1.subtitle}</h4>
+                        {post.section1.list && post.section1.list.length > 0 && (
                            
                             <ul>
                                 
-                                {post.benefits.list.map((item, index) => (
+                                {post.section1.list.map((item, index) => (
                                     <li className='fs-5 mb-2' key={index}>{item}</li>
                                 ))}
                             </ul>
                         )}
                     </>
                 )}
-                {post.howToRegister && (
+                {post.section2 && (
                     <>
-                        <h4>{post.howToRegister.title}</h4>
-                        <p className='fs-5'>{post.howToRegister.content}</p>
-                        <h4>{post.howToRegister.heading}</h4>
-                        {post.howToRegister.steps && post.howToRegister.steps.length > 0 && (
+                        <h4>{post.section2.title}</h4>
+                        <p className='fs-5'>{post.section2.content}</p>
+                        <h4>{post.section2.heading}</h4>
+                        {post.section2.steps && post.section2.steps.length > 0 && (
                             <ul>
-                                {post.howToRegister.steps.map((item, index) => (
+                                {post.section2.steps.map((item, index) => (
                                     <li className='fs-5 mb-2' key={index}>
                                     {item}
                                     </li>
+                                ))}
+                            </ul>
+                        )}
+                    </>
+                )}
+                {post.section3 && (
+                    <>
+                        <h4>{post.section3.title}</h4>
+                        <p className='fs-5'>{post.section3.content}</p>
+                        <h4>{post.section3.subtitle}</h4>
+                        {post.section3.list && post.section3.list.length > 0 && (
+                           
+                            <ul>
+                                
+                                {post.section3.list.map((item, index) => (
+                                    <li className='fs-5 mb-2' key={index}>{item}</li>
                                 ))}
                             </ul>
                         )}
