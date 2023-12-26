@@ -10,6 +10,26 @@ import FOOD from '../assets/food.png';
 import NIDHI from '../assets/nidhi.png';
 import PARTNER from '../assets/Partnership.png';
 import QueryForm from "../Forms/QueryForm";
+import Startup from '../assets/startup.png'
+import Accounting from '../assets/accounting.png'
+import LLP from '../assets/llp.png'
+import Digital from '../assets/digital.png'
+import Sole from '../assets/sole.png'
+import OPC from '../assets/opc.png'
+import Copyright from '../assets/copyright.png'
+import Labour from '../assets/labour.png'
+import Shop from '../assets/shop.png'
+import Trademark from '../assets/trademark.png'
+import Society from '../assets/society.png'
+import Trust from '../assets/trust.png'
+import Patent from '../assets/patent.png'
+import Website from '../assets/website.png'
+import Sec8 from '../assets/sec8.png'
+import Sec80 from '../assets/sec80g.png'
+import Niti from '../assets/niti.png'
+import CSR from '../assets/csr.png'
+
+
 const serviceData = [
   {
     id: 1,
@@ -307,28 +327,28 @@ const serviceData = [
   },
   {
     id: 13,
-    Img: Img6,
+    Img: Startup,
     title: "Startup India Registration",
     content: "Ignite innovation and unlock benefits with Startup India Registration. Our expert services guide startups through a seamless registration process, unlocking government incentives, and fostering growth. From documentation to compliance, trust us to navigate the startup ecosystem, ensuring your venture thrives with recognition and support. Propel your startup journey with our comprehensive Startup India registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 14,
-    Img: Img6,
+    Img: Accounting,
     title: "Accounting & Book Keeping",
     content: "Optimize financial management with our Accounting & Bookkeeping Services. Our expert team ensures accurate and timely record-keeping, transparent financial reporting, and compliance with accounting standards. Streamline your financial processes, gain insights into your business, and make informed decisions with our comprehensive accounting and bookkeeping assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 15,
-    Img: Img6,
+    Img: GST,
     title: "GST Return Filling",
     content: "Ensure seamless compliance with GST Return Filing. Our expert services streamline the process, providing accurate and timely submission of returns. From documentation to reconciliation, trust us to navigate the complexities of Goods and Services Tax, ensuring your business meets regulatory standards effortlessly. Stay compliant and focus on your business growth with our efficient GST Return Filing assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 16,
-    Img: Img6,
+    Img: LLP,
     title: "Limited Libility Partnership (LLP) ",
     content:
       "Limited Liability Partnership (LLP): A modern business structure blending partnership flexibility with limited liability. Partners enjoy protection from personal liability, shielding assets from business debts. Ideal for professional services, LLPs offer collaborative advantages with simplified operations, making it a strategic choice for businesses seeking flexibility and liability protection.",
@@ -368,7 +388,7 @@ const serviceData = [
   },
   {
     id: 17,
-    Img: Img6,
+    Img: OPC,
     title: "One Person Company",
     content:
       "As per the Companies Act, 2013 an One Person Company (OPC) is an unique entity where an individual can form a company. It combines the concept of a company with limited liability and succession, allowing a person to own and operate a company in their name.",
@@ -376,56 +396,56 @@ const serviceData = [
   },
   {
     id: 18,
-    Img: Img6,
+    Img: Sole,
     title: "Sole Propreietorship",
     content: "Embrace entrepreneurial independence with a Sole Proprietorship. Our expert services guide you through the seamless establishment of a sole proprietorship, ensuring simplicity in ownership and operations. From registration to compliance, trust us to create a robust foundation for your business journey. Enjoy full control, quick decision-making, and streamlined processes with our comprehensive Sole Proprietorship registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 19,
-    Img: Img6,
+    Img: Digital,
     title: "Digital Signature Certificates",
     content: "Enhance security and streamline document authentication with Digital Signature Certificates (DSC). Our expert services facilitate the issuance and implementation of DSCs, ensuring a secure and legally recognized digital signature for your online transactions and communications. From application to integration, trust us to navigate the intricacies, providing a robust solution for your digital security needs. Elevate your online presence with our comprehensive Digital Signature Certificates assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 20,
-    Img: Img6,
+    Img: Shop,
     title: "Shop & Establishment Registration",
     content: "Establish legal compliance and a conducive work environment with Shop & Establishment Registration. Our expert services streamline the registration process, ensuring adherence to labor laws. From documentation to regulatory compliance, trust us to navigate the complexities, providing a solid foundation for your business and demonstrating your commitment to employee welfare. Secure a compliant and efficient workplace with our comprehensive Shop & Establishment Registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 21,
-    Img: Img6,
+    Img: Labour,
     title: "Labour Registration",
     content: "Prioritize workforce welfare with Labour Registration. Our expert services streamline the registration process, ensuring compliance with labor laws and regulations. From documentation to regulatory adherence, trust us to navigate the complexities, fostering a harmonious employer-employee relationship and demonstrating your commitment to ethical labor practices. Ensure a compliant and conducive work environment with our efficient Labour Registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 22,
-    Img: Img6,
+    Img: Trademark,
     title: "Trademark Registration",
     content: "Safeguard your brand identity with Trademark Registration. Our expert services guide you through the process, ensuring legal protection for your business name, logo, and distinctive assets. From application to approval, trust us to navigate the complexities, securing your brand recognition and fostering trust among consumers. Elevate your brand with our comprehensive Trademark Registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 23,
-    Img: Img6,
+    Img: Copyright,
     title: "Copy Right Registration",
     content: "Safeguard your creative works with Copyright Registration. Our expert services guide you through the process, ensuring legal protection for your artistic, literary, or musical creations. From application to approval, trust us to navigate the complexities, securing your intellectual property and providing you with exclusive rights. Elevate your creative endeavors with our comprehensive Copyright Registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 24,
-    Img: Img6,
+    Img: Patent,
     title: "Patent",
     content: "Secure your innovations with Patent Registration. Our expert services guide you through the process, ensuring legal protection for your inventions, technologies, and unique ideas. From application to approval, trust us to navigate the complexities, safeguarding your intellectual property and providing you with exclusive rights. Propel your innovative endeavors with our comprehensive Patent Registration assistance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 25,
-    Img: Img6,
+    Img: Website,
     title: "Static / Dynamic Website",
     content: "Elevate your online presence with our expert Static and Dynamic Website Development services. A static website offers simplicity and quick loading times, ideal for showcasing information. Meanwhile, a dynamic website allows interactive features, enhancing user engagement. Trust us to tailor a website that aligns with your business goals, ensuring a seamless online experience for your visitors. Explore the best of both worlds with our comprehensive Static/Dynamic Website Development solutions.",
     queryForm: <QueryForm title="GST Registration" />,
@@ -433,14 +453,14 @@ const serviceData = [
   
   {
     id: 27,
-    Img: Img6,
+    Img: Website,
     title: "E-commerce Website",
     content: "Ignite online success with our E-commerce Website Development services. We craft robust and user-friendly e-commerce platforms tailored to your business needs. From seamless navigation to secure transactions, our expert team ensures a comprehensive solution. Elevate your online store, reach a wider audience, and optimize customer experiences with our end-to-end E-commerce Website Development assistance. Turn your business into a digital marketplace with our expertise.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 28,
-    Img: Img6,
+    Img: Sec8,
     title: "Section-8",
     content: "Empower social change with our NGO Section 8 Registration services. We guide you through the seamless process of establishing a non-profit organization, registered under Section 8 of the Companies Act. Ensure legal compliance, unlock funding opportunities, and make a lasting impact on society. Trust us to navigate the complexities, providing comprehensive assistance for your NGO Section 8 Registration. Propel your philanthropic endeavors with our expert guidance.",
     queryForm: <QueryForm title="GST Registration" />,
@@ -490,35 +510,35 @@ const serviceData = [
   },
   {
     id: 29,
-    Img: Img6,
+    Img: Society,
     title: "Society Registration",
     content: "Foster community initiatives with Society Registration. Our expert services guide you through the seamless registration process, ensuring legal compliance and credibility for your social organization. From documentation to regulatory adherence, trust us to navigate the intricacies, providing comprehensive assistance for your Society Registration. Empower your societal endeavors with a robust legal framework, fostering positive change and community development.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 30,
-    Img: Img6,
+    Img: Trust,
     title: "Trust Registration",
     content: "Establish a foundation for philanthropy and social impact with Trust Registration. Our expert services guide you through the seamless registration process, ensuring legal compliance and credibility. From documentation to regulatory adherence, trust us to navigate the complexities, providing comprehensive assistance for your Trust Registration. Empower your charitable endeavors with a solid legal framework and make a positive difference in the community.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 31,
-    Img: Img6,
+    Img: CSR,
     title: "CSR-1 Filling",
     content: "Ensure transparent corporate social responsibility with CSR-1 Filing. Our expert services guide you through the filing process, ensuring compliance with regulatory mandates. From documentation to submission, trust us to navigate the intricacies, facilitating your organization's commitment to social impact. Enhance your CSR initiatives with our comprehensive CSR-1 Filing assistance, contributing to a sustainable and responsible business ethos.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 32,
-    Img: Img6,
+    Img: Sec80,
     title: "Sec. 80G & 12A Registration",
     content: "Maximize your organization's impact with Sec. 80G & 12A Registration. Our expert services streamline the registration process, ensuring eligibility for tax exemptions and charitable status. Gain credibility, encourage donor contributions, and contribute to social causes with confidence. Trust us to navigate the complexities, providing comprehensive assistance for your Sec. 80G & 12A Registration. Empower your organization to make a lasting difference with our expert guidance.",
     queryForm: <QueryForm title="GST Registration" />,
   },
   {
     id: 33,
-    Img: Img6,
+    Img: Niti,
     title: "Niti Aayog Registration",
     content: "Propel your organization's social impact with Niti Aayog Registration. Our expert services facilitate the registration process, ensuring compliance with regulatory requirements. Gain recognition, access government initiatives, and contribute to national development. Trust us to navigate the intricacies, providing comprehensive assistance for your Niti Aayog Registration. Empower your organization to make a positive difference with our expert guidance.",
     queryForm: <QueryForm title="GST Registration" />,
