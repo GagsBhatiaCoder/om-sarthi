@@ -14,8 +14,8 @@ export default function MainSection() {
                         <div >
                             <Link href="#"><i className="bi bi-check-circle me-1"></i>Company Incorporation</Link>
                             <Link href="#"><i className="bi bi-check-circle me-1"></i>ROC Filing</Link>
-                            <Link href="#"><i className="bi bi-check-circle me-1"></i>GST Services</Link>
-                            <Link href="#"><i className="bi bi-check-circle me-1"></i>MSME Services</Link>
+                            <Link href="#"><i className="bi bi-check-circle me-1"></i>GST Filling</Link>
+                            <Link href="#"><i className="bi bi-check-circle me-1"></i>MSME Registration</Link>
                         </div>
                         <div>
                             <Link href="#"><i className="bi bi-check-circle me-1"></i>Trademark Services</Link>

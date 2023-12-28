@@ -13,6 +13,7 @@ export default function FullServiceDetail() {
     if (!post) {
         return <div>Artical Not Found</div>
     }
+
     return (
         <div>
             <Navbar />
@@ -22,7 +23,7 @@ export default function FullServiceDetail() {
                 <div className='fullservice-titles'>
                     <h2 className='mb-2'>{post.title}</h2>
                     <p className='fs-5'>{post.content} </p>
-                    {/* <img style={{width:"100%"}} src={post.Img} alt={post.title} /> */}
+                    <p>Payment for Service <b>1499/-</b> excluding Government Fees </p>
                 </div>
                 <div className='fullservice-form'>
                     {post.queryForm}

@@ -100,8 +100,7 @@ export default function Navbar() {
                   Web Developement
                 </Link>
                 <ul className="dropdown-menu">
-                  <li className="dropdown-item"><Link to="/allservice/25" className="dropdown-item">Static Website/Dynamic Website </Link> </li>
-                  <li className="dropdown-item"><Link to="/allservice/27" className="dropdown-item">E-Commerce Website</Link></li>
+                  <li className="dropdown-item"><Link to="/allservice/25" className="dropdown-item">Web/E-commerce Website </Link> </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">

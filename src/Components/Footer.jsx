@@ -38,13 +38,13 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className='footer-links d-flex flex-column align-items-center'>
-                    <h5 className='pb-3 footer-subtitle'>Web Developement</h5>
+                    <h5 className='pb-3 footer-subtitle'>Other Services</h5>
                     <hr className='footer-line' />
                     <ul>
-                    <li > <Link onClick={scrollToTop}to="/">Static Website </Link></li>
-                  <li > <Link onClick={scrollToTop} >Dynamic Website</Link></li>
-                  <li > <Link onClick={scrollToTop} >E-Commerce Website</Link></li>
-                  <li > <Link onClick={scrollToTop} >NGO Webiste</Link></li>
+                    <li > <Link onClick={scrollToTop} to="/allservice/25" >Web/Ecommerce Website </Link></li>
+                  <li > <Link onClick={scrollToTop} to="/allservice/33" >Niti Aayog</Link></li>
+                  <li > <Link onClick={scrollToTop} to="/allservice/3" >Msme Registration</Link></li>
+                  <li > <Link onClick={scrollToTop} to="/allservice/28">Section 8 Registration</Link></li>
                     </ul>
                 </div>
             </div>
