@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React,{useState, useEffect} from 'react'
 import Navbar from '../Components/Navbar'
 import MainSection from '../Components/MainSection'
 import Footer from '../Components/Footer'
@@ -15,18 +15,23 @@ export default function Home() {
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
-  useEffect(() => {
-    // This effect runs once when the component mounts
-    window.onload = () => {
-      // Set loading to false when the whole page is loaded
-      setLoading(false);
-    };
 
-    // Cleanup function for removing the event listener
-    return () => {
-      window.onload = null;
-    };
-  }, []); // Empty dependency array ensures the effect runs only once
+
+  useEffect(() => {
+    const hasLoadedBefore = localStorage.getItem('hasLoadedBefore');
+
+    if (hasLoadedBefore) {
+      // Not the first load, set loading to false
+      setLoading(false);
+    } else {
+      // First load, set loading to true and mark as loaded
+      setLoading(true);
+      localStorage.setItem('hasLoadedBefore', 'true');
+    }
+  }, []);
+
+  
+
 
 
   return (
