@@ -1,7 +1,15 @@
+.post-content{
+    font-size: 1.2rem;
+}
 .card-hover:hover{
     box-shadow: 0 0 23px 4px #e0dfdf;
 }
 .fullservice-titles{
     flex: 1;
     max-width: 50%;
+}
+@media(max-width:576px){
+    .post-content{
+        font-size: 1rem;
+    }
 }

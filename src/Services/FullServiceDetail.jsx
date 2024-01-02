@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import serviceData from './ServiceData';
 import Achievements from '../Components/Achievements';
 import FloatWatsappBtn from '../Components/FloatWatsappBtn';
@@ -18,19 +18,61 @@ export default function FullServiceDetail() {
         <div>
             <Navbar />
             <FloatWatsappBtn />
-            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-5 '>
+            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-2 p-sm-5 '>
 
                 <div className='fullservice-titles'>
                     <h2 className='mb-2'>{post.title}</h2>
-                    <p className='fs-5'>{post.content} </p>
-                    <p>Payment for Service <b>1499/-</b> excluding Government Fees </p>
+                    <p className='post-content'>{post.content} </p>
+                    <p>Payment for Service <b>1499/-</b> excluding Government Fees <Link className='text-primary' data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        What you'll get
+                    </Link></p>
+                    
+
+
+                    <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="exampleModalLabel">You'll get</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body">
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i> Expert assisted process</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i>Your company name is reserved in just
+                                            2 - 4 days</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i> DSC in just 4 - 7 days</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i> SPICe+ form filling in 14 days*</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i>Incorporation Certificate</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i> Company PAN+TAN</p>
+                                    </div>
+                                    <div>
+                                        <p> <i className="bi bi-check-square text-success me-2"></i> DIN for directors</p>
+                                    </div>
+                                </div>
+                                <div className="modal-footer">
+                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='fullservice-form'>
                     {post.queryForm}
                 </div>
             </div>
             <div>
-            
+
             </div>
             <div className='p-5'>
                 {post.section1 && (

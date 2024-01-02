@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../Components/Navbar'
 import MainSection from '../Components/MainSection'
 import Footer from '../Components/Footer'
@@ -7,14 +7,37 @@ import Achievements from '../Components/Achievements'
 import serviceData from '../Services/ServiceData'
 import ServiceCard from '../Services/ServiceCard'
 import { Link } from 'react-router-dom'
+import { HashLoader } from 'react-spinners'
 
 export default function Home() {
+  const [loading, setLoading] = useState(true)
   const homeServiceData = serviceData.filter((post) => post.id <= 6 );
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
+  useEffect(() => {
+    // This effect runs once when the component mounts
+    window.onload = () => {
+      // Set loading to false when the whole page is loaded
+      setLoading(false);
+    };
+
+    // Cleanup function for removing the event listener
+    return () => {
+      window.onload = null;
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
+
+
   return (
     <div>
+            {loading && (<div className='loader' style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "rgba(255, 255, 255, 0.8)", zIndex: 1000}}><HashLoader
+      color={"#0B5ED7"}
+      loading={loading}
+      size={100}
+      aria-label="Loading Spinner"
+      data-testid="loader"
+    /> </div>)}
       <Navbar />
       <FloatWatsappBtn />
       <MainSection />

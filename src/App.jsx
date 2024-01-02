@@ -7,6 +7,7 @@ import FullServiceDetail from './Services/FullServiceDetail';
 import AllServices from './Services/AllServices';
 import RefundPolicy from './Pages/RefundPolicy';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import Payment from './Pages/Payment';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/fullservice" element={<FullServiceDetail />} />
           <Route path="/allservice" element={<AllServices />} />
           <Route path="/allservice/:id" element={<FullServiceDetail />} />
+          <Route path="/payment/:id" element={<Payment />} />
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
