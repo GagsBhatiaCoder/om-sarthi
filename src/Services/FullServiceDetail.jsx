@@ -13,20 +13,18 @@ export default function FullServiceDetail() {
     if (!post) {
         return <div>Artical Not Found</div>
     }
-
     return (
         <div>
             <Navbar />
             <FloatWatsappBtn />
-            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-2 p-sm-5 '>
-
+            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center bg-warning bg-gradient p-5'>
                 <div className='fullservice-titles'>
                     <h2 className='mb-2'>{post.title}</h2>
                     <p className='post-content'>{post.content} </p>
                     <p>Payment for Service <b>1499/-</b> excluding Government Fees <Link className='text-primary' data-bs-toggle="modal" data-bs-target="#exampleModal">
                         What you'll get
                     </Link></p>
-                    
+
 
 
                     <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

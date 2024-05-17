@@ -1,6 +1,6 @@
 import React from 'react'
 import './Comp.css'
-import Logo from '../assets/GagsLogo.png'
+import Logo from '../assets/Legal Resolver.png'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {

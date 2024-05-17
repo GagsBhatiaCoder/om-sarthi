@@ -13,7 +13,7 @@ export default function FloatWatsappBtn() {
     <div>
       <button className='btn btn-success rounded-circle border-0' onClick={handleClick} 
       style={{position:"fixed", bottom:"20px", right:"20px", background:"#25D366",
-       borderRadius:"30px", fontSize:"1.5rem"}}><i className="bi bi-whatsapp"></i></button>
+       borderRadius:"30px", fontSize:"1.5rem" ,zIndex:"1"}}><i className="bi bi-whatsapp"></i></button>
     </div>
   )
 }

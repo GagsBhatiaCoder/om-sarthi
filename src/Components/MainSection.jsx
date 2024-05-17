@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function MainSection() {
     return (
         <>
-            <main className=' d-flex justify-content-around flex-column flex-md-row  bg-primary p-5 '>
+            <main className='d-flex flex-md-row flex-column justify-content-around  bg-primary p-5 '>
                 <div>
                     <h1 className='py-2'>Welcome To <span >Samay</span></h1>
                     <p className='fs-5'>Easily start and operate your business with Industry Experts at one place.</p>

@@ -6,6 +6,7 @@ import serviceData from './ServiceData'
 import FloatWatsappBtn from '../Components/FloatWatsappBtn'
 
 export default function AllServices() {
+    
     return (
         <div>
             <Navbar />
