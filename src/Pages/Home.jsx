@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import Navbar from '../Components/Navbar'
 import MainSection from '../Components/MainSection'
 import Footer from '../Components/Footer'
@@ -7,28 +7,28 @@ import Achievements from '../Components/Achievements'
 import serviceData from '../Services/ServiceData'
 import ServiceCard from '../Services/ServiceCard'
 import { Link } from 'react-router-dom'
-import { HashLoader } from 'react-spinners'
+// import { HashLoader } from 'react-spinners'
 
 export default function Home() {
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
   const homeServiceData = serviceData.filter((post) => post.id <= 6 );
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
 
 
-  useEffect(() => {
-    const hasLoadedBefore = localStorage.getItem('hasLoadedBefore');
+  // useEffect(() => {
+  //   const hasLoadedBefore = localStorage.getItem('hasLoadedBefore');
 
-    if (hasLoadedBefore) {
-      // Not the first load, set loading to false
-      setLoading(false);
-    } else {
-      // First load, set loading to true and mark as loaded
-      setLoading(true);
-      localStorage.setItem('hasLoadedBefore', 'true');
-    }
-  }, []);
+  //   if (hasLoadedBefore) {
+      
+  //     setLoading(false);
+  //   } else {
+  //     // First load, set loading to true and mark as loaded
+  //     setLoading(true);
+  //     localStorage.setItem('hasLoadedBefore', 'true');
+  //   }
+  // }, []);
 
   
 
@@ -36,13 +36,13 @@ export default function Home() {
 
   return (
     <div>
-            {loading && (<div className='loader' style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "rgba(255, 255, 255, 0.8)", zIndex: 1000}}><HashLoader
+            {/* {loading && (<div className='loader' style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "rgba(255, 255, 255, 0.8)", zIndex: 1000}}><HashLoader
       color={"#0B5ED7"}
       loading={loading}
       size={100}
       aria-label="Loading Spinner"
       data-testid="loader"
-    /> </div>)}
+    /> </div>)} */}
       <Navbar />
       <FloatWatsappBtn />
       <MainSection />
